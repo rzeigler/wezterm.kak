@@ -19,7 +19,7 @@ define-command -override wezterm-terminal-vertical -params .. -shell-completion 
     The current pane is split into two, top and bottom
     The program passed as argument will be executed in the new terminal' \
 %{
-    wezterm cli split-pane --right --cwd %val{client_env_PWD} -- %arg{@}
+    wezterm cli split-pane --cwd %val{client_env_PWD} -- %arg{@}
 }
 
 define-command -override wezterm-terminal-tab -params .. -shell-completion -docstring '
