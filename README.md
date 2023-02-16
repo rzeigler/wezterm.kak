@@ -4,7 +4,11 @@ Basic [WezTerm](https://github.com/wez/wezterm) integration for Kakoune. Inspire
 
 ## Usage
 
-Invoke `wezterm-integration-enable` command to enable integration.
+Ensure that the wezterm command is on your path and add `wezterm` to the list of windowing_modules with
+
+```
+set-option -add global windowing_modules 'wezterm'
+```
 
 ## User Mode
 
